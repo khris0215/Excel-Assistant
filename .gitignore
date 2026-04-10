@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+excel_assistant/runtime/settings.json
+
+runtime/sent_registering.json

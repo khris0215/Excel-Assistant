@@ -1,0 +1,28 @@
+You are building a desktop application in Python that monitors a specific Excel file and notifies users when dates in selected cells approach or exceed a threshold (e.g., 45 banking days). The app should run in the background as a system tray app on Windows, start automatically on login, and show desktop notifications. It should allow configuration of:
+
+- The Excel file path to monitor (only one file).
+- The column and row range to watch for date entries.
+- Optional email column to use for sending alerts per row.
+- Global email settings including recipient, subject template, and body template.
+- Banking day calculation (weekdays only).
+
+The app should:
+1. Read the configured Excel file (.xlsx) in read‑only mode.
+2. Calculate banking days from the date in each monitored cell to today.
+3. Detect when entries are near threshold (e.g., 40–44 days) and show a notification.
+4. Detect when entries reach or exceed the threshold (>= 45 banking days).
+5. Send automated emails based on the configured settings (either global or per row).
+6. Mark entries as emailed to prevent duplicates (e.g., update a column “Email Sent”).
+7. Provide a settings UI so users can configure file path, column mapping, email settings, and threshold.
+8. Run as a background Windows tray app that auto‑starts on login.
+9. Use appropriate tools like pandas/openpyxl (Excel), plyer (notifications), and smtplib (email).
+10. Be modular and easy to maintain thatll give professional ui ux but also get the job done.
+
+Generate:
+- The project file structure (folders, main.py, modules).
+- A README.md with setup instructions.
+- Initial code for the tray app and Excel monitoring logic.
+Start by scaffolding the project, then implement the core features one by one. Comment code clearly, and keep functions modular.
+
+
+use html, tailwind, js, and wrap with python to create an executable file
